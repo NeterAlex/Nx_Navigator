@@ -23,7 +23,7 @@ export default function InfoCard() {
     return (
         <Card
             isBlurred
-            className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+            className=" border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
             shadow="sm"
         >
             <CardBody>
@@ -32,7 +32,6 @@ export default function InfoCard() {
                         <Image
                             alt="Album cover"
                             className="object-cover"
-                            height={200}
                             shadow="md"
                             src="avatar.png"
                             width="100%"
