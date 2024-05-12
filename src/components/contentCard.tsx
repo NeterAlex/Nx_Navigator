@@ -49,7 +49,7 @@ export default function ContentCard() {
                             <ListboxItem
                                 key="email"
                                 description="NeterAlex@outlook.com"
-                                onClick={() => window.open("https://blog.neteralex.cn/resume", "_blank")}
+                                onClick={() => window.open("mailto:neteralex@outlook.com", "_blank")}
                                 startContent={<AiFillMail size={22}/>}
                             >
                                 Email
