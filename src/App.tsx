@@ -9,7 +9,7 @@ function App() {
     return (
         <>
             <div
-                className="light text-foreground bg-[#F3F4F6] gap-4 flex flex-col items-center justify-center align-middle h-full w-full">
+                className="light p-[12px] text-foreground bg-[#F3F4F6] gap-4 flex flex-col items-center justify-center align-middle h-full w-full">
                 <TextCard/>
                 <InfoCard/>
                 <ContentCard/>
