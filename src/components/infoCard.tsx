@@ -91,7 +91,7 @@ export default function InfoCard() {
                         </div>
 
                         <div className="flex w-full items-center justify-center">
-                            <Tooltip content="再回到那一天">
+                            <Tooltip>
                                 <Button
                                     isIconOnly
                                     className="data-[hover]:bg-foreground/10"
@@ -113,7 +113,7 @@ export default function InfoCard() {
                                 </Button>
                             </Tooltip>
 
-                            <Tooltip content="青春不会暂停">
+                            <Tooltip>
                                 <Button
                                     isIconOnly
                                     className="w-auto h-auto data-[hover]:bg-foreground/10"
@@ -135,7 +135,7 @@ export default function InfoCard() {
                                 </Button>
                             </Tooltip>
 
-                            <Tooltip content="再拾起一件往事">
+                            <Tooltip>
                                 <Button
                                     isIconOnly
                                     className="data-[hover]:bg-foreground/10"
