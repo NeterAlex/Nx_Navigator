@@ -7,7 +7,7 @@ import {NextUIProvider} from "@nextui-org/react";
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <NextUIProvider>
-            <div className="h-full md:h-[100vh] flex flex-col items-center">
+            <div className="bg-[#F3F4F6] h-full md:h-[100vh] flex flex-col items-center">
                 <App/>
             </div>
         </NextUIProvider>
