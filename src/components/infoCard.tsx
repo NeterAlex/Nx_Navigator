@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
+import Typed from "typed.js"
 import {
     Button,
     Card,
@@ -19,6 +20,21 @@ import {ShuffleIcon} from "./Icons/ShuffleIcon.tsx";
 
 export default function InfoCard() {
     const [liked, setLiked] = React.useState(false);
+    const el = useRef(null)
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: ['> 林歆', '> NeterAlex'],
+            typeSpeed: 125,
+            fadeOut: true,
+            loop: true,
+            loopCount: Infinity,
+            cursorChar: '',
+            smartBackspace: true,
+        })
+        return () => {
+            typed.destroy()
+        }
+    }, [])
 
     return (
         <Card
@@ -33,16 +49,16 @@ export default function InfoCard() {
                             alt="Album cover"
                             className="object-cover"
                             shadow="md"
-                            src="avatar.png"
+                            src="avatar.jpg"
                             width="100%"
                         />
                     </div>
 
                     <div className="flex flex-col col-span-6 md:col-span-8">
                         <div className="flex justify-between items-start">
-                            <div className="flex flex-col gap-0">
+                            <div className="flex flex-col h-[50px] gap-0">
                                 <p className="text-small text-foreground/80">@NEAUACM </p>
-                                <h1 className="text-2xl text-primary font-medium mt-1">NeterAlex</h1>
+                                <h1 ref={el} className="text-2xl text-primary font-medium mt-1">NeterAlex</h1>
                             </div>
                             <Popover isOpen={liked} onOpenChange={(open) => setLiked(open)} placement="bottom"
                                      showArrow={true}>
