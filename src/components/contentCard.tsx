@@ -1,4 +1,4 @@
-import {Card, CardBody, Image, Listbox, ListboxItem, ListboxSection} from "@nextui-org/react";
+import {Card, CardBody, Listbox, ListboxItem, ListboxSection} from "@nextui-org/react";
 import {ReactNode} from "react";
 import {
     BsCodeSlash,
@@ -31,7 +31,7 @@ export default function ContentCard() {
                         <ListboxSection title="Intro" showDivider>
                             <ListboxItem className={"cursor-default"}
                                          key="fav"
-                                         description="语言学, 音乐, 小提琴、二胡演奏, 下厨, 偶尔绘画"
+                                         description="语言学、音乐、小提琴、二胡、绘画"
                                          startContent={<BsMusicPlayer size={22}/>}
                             >
                                 爱好
@@ -55,7 +55,7 @@ export default function ContentCard() {
                                 Github Profile
                             </ListboxItem>
                         </ListboxSection>
-                        <ListboxSection title="Skill" showDivider>
+                        <ListboxSection title="Skill">
                             <ListboxItem className={"cursor-default"}
                                          key="lang"
                                          description="C#, TypeScript, Kotlin, Python, Dart"
@@ -83,24 +83,6 @@ export default function ContentCard() {
                                 startContent={<BsGrid size={22}/>}
                             >
                                 其他
-                            </ListboxItem>
-                        </ListboxSection>
-
-                        <ListboxSection title="Team">
-                            <ListboxItem
-                                key="delete"
-                                description="副队长"
-                                className={"cursor-default"}
-                                startContent={<Image
-                                    alt="Album cover"
-                                    className="object-cover"
-                                    height={22}
-                                    shadow="md"
-                                    src="acmproj.png"
-                                    width="22px"
-                                />}
-                            >
-                                东北农业大学 ACM 集训队项目部
                             </ListboxItem>
                         </ListboxSection>
                     </Listbox>
