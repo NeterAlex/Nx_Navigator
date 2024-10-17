@@ -68,14 +68,14 @@ export default function ContentCard() {
                                          description="React、Next.js、Web Assembly、ASP.NET、SpringBoot"
                                          startContent={<BsStack size={22}/>}
                             >
-                                Web 全栈开发
+                                Web 全栈
                             </ListboxItem>
                             <ListboxItem
                                 key="client" className={"cursor-default"}
-                                description="Flutter、React Native、WPF、PyQt"
+                                description="Flutter、React Native、WPF、Compose Multiplatform、PyQt"
                                 startContent={<BsLaptop size={22}/>}
                             >
-                                客户端开发
+                                跨平台客户端
                             </ListboxItem>
                             <ListboxItem
                                 key="chore" className={"cursor-default"}
