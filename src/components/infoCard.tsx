@@ -1,16 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import Typed from "typed.js"
-import {
-    Button,
-    Card,
-    CardBody,
-    Image,
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-    Slider,
-    Tooltip
-} from "@nextui-org/react";
+import {Button, Card, CardBody, Image, Popover, PopoverContent, PopoverTrigger, Slider} from "@nextui-org/react";
 import {HeartIcon} from "./Icons/HeartIcon.tsx";
 import {RepeatOneIcon} from "./Icons/RepeatOneIcon.tsx";
 import {PreviousIcon} from "./Icons/PreviousIcon.tsx";
@@ -44,7 +34,7 @@ export default function InfoCard() {
         >
             <CardBody>
                 <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
-                    <div className="relative col-span-6 md:col-span-4">
+                    <div className="relative col-span-6 md:col-span-4 ">
                         <Image
                             alt="Album cover"
                             className="object-cover"
@@ -58,7 +48,7 @@ export default function InfoCard() {
                         <div className="flex justify-between items-start">
                             <div className="flex flex-col h-[50px] gap-0">
                                 <p className="text-small text-foreground/80">@NEAUACM </p>
-                                <h1 ref={el} className="text-2xl text-primary font-medium mt-1">NeterAlex</h1>
+                                <h1 ref={el} className="text-2xl text-primary font-medium mt-1"></h1>
                             </div>
                             <Popover isOpen={liked} onOpenChange={(open) => setLiked(open)} placement="bottom"
                                      showArrow={true}>
@@ -90,10 +80,7 @@ export default function InfoCard() {
                                 aria-label="Music progress"
                                 classNames={{
                                     base: "max-w-md gap-3",
-                                    track: "border-s-primary-100",
-                                    filler: "bg-gradient-to-r from-primary-100 to-primary-500"
                                 }}
-
                                 color="primary"
                                 maxValue={80}
                                 defaultValue={21}
@@ -107,61 +94,53 @@ export default function InfoCard() {
                         </div>
 
                         <div className="flex w-full items-center justify-center">
-                            <Tooltip>
-                                <Button
-                                    isIconOnly
-                                    className="data-[hover]:bg-foreground/10"
-                                    radius="full"
-                                    variant="light"
-                                >
-                                    <RepeatOneIcon className="text-foreground/80"/>
-                                </Button>
-                            </Tooltip>
+                            <Button
+                                isIconOnly
+                                className="data-[hover]:bg-foreground/10"
+                                radius="full"
+                                variant="light"
+                            >
+                                <RepeatOneIcon className="text-foreground/80"/>
+                            </Button>
 
-                            <Tooltip content="悟已往之不谏">
-                                <Button
-                                    isIconOnly
-                                    className="data-[hover]:bg-foreground/10"
-                                    radius="full"
-                                    variant="light"
-                                >
-                                    <PreviousIcon/>
-                                </Button>
-                            </Tooltip>
+                            <Button
+                                isIconOnly
+                                color="primary"
+                                className="data-[hover]:bg-foreground/10"
+                                radius="full"
+                                variant="light"
+                            >
+                                <PreviousIcon/>
+                            </Button>
 
-                            <Tooltip>
-                                <Button
-                                    isIconOnly
-                                    className="w-auto h-auto data-[hover]:bg-foreground/10"
-                                    radius="full"
-                                    variant="light"
-                                >
-                                    <PauseCircleIcon size={54}/>
-                                </Button>
-                            </Tooltip>
+                            <Button
+                                isIconOnly
+                                className="w-auto h-auto data-[hover]:bg-foreground/10"
+                                color="primary"
+                                radius="full"
+                                variant="shadow"
+                            >
+                                <PauseCircleIcon size={54}/>
+                            </Button>
 
-                            <Tooltip content="知来者之可追">
-                                <Button
-                                    isIconOnly
-                                    className="data-[hover]:bg-foreground/10"
-                                    radius="full"
-                                    variant="light"
-                                >
-                                    <NextIcon/>
-                                </Button>
-                            </Tooltip>
+                            <Button
+                                isIconOnly
+                                className="data-[hover]:bg-foreground/10"
+                                radius="full"
+                                color="primary"
+                                variant="light"
+                            >
+                                <NextIcon/>
+                            </Button>
 
-                            <Tooltip>
-                                <Button
-                                    isIconOnly
-                                    className="data-[hover]:bg-foreground/10"
-                                    radius="full"
-                                    variant="light"
-                                >
-                                    <ShuffleIcon className="text-foreground/80"/>
-                                </Button>
-                            </Tooltip>
-
+                            <Button
+                                isIconOnly
+                                className="data-[hover]:bg-foreground/10"
+                                radius="full"
+                                variant="light"
+                            >
+                                <ShuffleIcon className="text-foreground/80"/>
+                            </Button>
                         </div>
                     </div>
                 </div>
