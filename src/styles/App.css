@@ -9,5 +9,11 @@ body::-webkit-scrollbar {
 
 body {
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
 }
