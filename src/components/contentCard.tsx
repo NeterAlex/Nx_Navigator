@@ -58,28 +58,28 @@ export default function ContentCard() {
                         <ListboxSection title="Skill">
                             <ListboxItem className={"cursor-default"}
                                          key="lang"
-                                         description="C#, TypeScript, Kotlin, Python, Dart"
+                                         description="C#、TypeScript、Kotlin、Python、Dart、Rust"
                                          startContent={<BsCodeSlash size={22}/>}
                             >
                                 语言
                             </ListboxItem>
                             <ListboxItem className={"cursor-default"}
                                          key="web-fullstack"
-                                         description="React, Next.js, ASP.NET, SpringBoot"
+                                         description="React、Next.js、Web Assembly、ASP.NET、SpringBoot"
                                          startContent={<BsStack size={22}/>}
                             >
                                 Web 全栈开发
                             </ListboxItem>
                             <ListboxItem
                                 key="client" className={"cursor-default"}
-                                description="Flutter, WPF, MAUI, PyQt"
+                                description="Flutter、React Native、WPF、PyQt"
                                 startContent={<BsLaptop size={22}/>}
                             >
                                 客户端开发
                             </ListboxItem>
                             <ListboxItem
                                 key="chore" className={"cursor-default"}
-                                description="GIS, PostgreSQL, Git, Docker, Nginx, ML"
+                                description="GIS、PostgreSQL、Git、Docker、Nginx、ML"
                                 startContent={<BsGrid size={22}/>}
                             >
                                 其他
