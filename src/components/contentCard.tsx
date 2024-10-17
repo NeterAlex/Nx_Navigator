@@ -72,7 +72,7 @@ export default function ContentCard() {
                             </ListboxItem>
                             <ListboxItem
                                 key="client" className={"cursor-default"}
-                                description="Flutter、React Native、WPF、Compose Multiplatform、PyQt"
+                                description="Flutter、React Native、WPF、Kotlin Multiplatform、PyQt"
                                 startContent={<BsLaptop size={22}/>}
                             >
                                 跨平台客户端
